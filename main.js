@@ -142,3 +142,17 @@ if (contactForm && formStatus) {
   });
 }
 
+// webinar popup logic
+  const overlay = document.getElementById('webinarOverlay');
+  const closeBtn = document.getElementById('closeBtn');
+
+  closeBtn.addEventListener('click', () => {
+    overlay.classList.add('hidden');
+  });
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.classList.add('hidden');
+    }
+  });
+

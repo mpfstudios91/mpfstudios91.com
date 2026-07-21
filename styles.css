@@ -122,7 +122,7 @@ html {
 /* Header */
 .site-header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -285,6 +285,10 @@ body {
   list-style: none;
   padding: 0;
   gap: 1.5rem;
+  background-color: #1f2937;
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .nav-list li {
@@ -300,6 +304,7 @@ body {
   font-size: 1rem;
   transition: color 0.3s;
 }
+
 
 .nav-link:hover,
 .nav-link.active {
@@ -348,7 +353,8 @@ body {
   .nav-link {
     padding: 0;
     font-size: .8rem;
-    color: var(--color-primary)
+    font-size: 15px;
+    color: var(--color-text-main)
   }
 }
 .live-link{
@@ -360,6 +366,16 @@ body {
    font-size: .7rem;
 
 }
+/* @media (max-width: 600px) {
+  .hero-subtitle {
+  font-size: 0.875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+  margin-top: 7rem;
+}
+} */
 
 /* Main / Hero Section */
 .hero-section {
@@ -383,6 +399,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 1rem;
   color: var(--color-text-muted);
+  margin-top: 7rem;
 }
 
 .hero-title {
